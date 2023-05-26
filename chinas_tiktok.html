@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TIKTOK</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #888;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+    <script>
+       function showAlert() {
+  alert("SINAVDA BAŞARILAR");
+}
+        function openTab(tabName) {
+            var i, tabContent;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+       
+   
+
+    </script>
+</head>
+<body onload="showAlert()">
+    <header>
+        <h1>TIKTOK</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="openTab('tab1')">INFO</a>
+        <a href="#" onclick="openTab('tab2')">KEYS</a>
+        <a href="#" onclick="openTab('tab3')">ALGORITHMS</a>
+        <a href="#" onclick="openTab('tab4')">INVESTMENTS</a>
+        <a href="#" onclick="openTab('tab5')">ACTIVITIES</a>
+    </nav>
+    <center><p style="font-size: 500%;">你好</p></center>
+
+    <main>
+        <div id="tab1" class="tab-content">
+            
+                <center>
+                    <h2>INFO</h2>
+            <p style="font-size: 160%;">ByteDance - 2016<br>
+                抖音Dǒu yīn = Tiktok<br>
+                2017 Musical.ly(LANET YOUTUBE REKLAMLARI)<br>
+                </p>
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABEVBMVEX///8AAAAl9O7+LFX+AEEA8+2iKkAm+PL/LFWq+vel+fYCDQz/LVj+I1Dd/fv+boYm/PbnLFCQHzT+Gkv+Ekj+fJD/9ff+B0SZ+fX+IE5Y9vHP/PoSaWYDFhYABABw9/Lr/v3+QGMk6uQSc3D+VnNPGCL/7fD/vce/KET+kqP/3uOC+PS4+/j+eIxp9/Ig087/z9b+S2vZLU4YnJgViYX/q7f/1NoNVVMaqKT+h5n+nq1wHSwdvLjHH0H+ADs5FRt9HjCsJkBYABXNo6p+t7UPPTsi3Ncex8KUsLKPACQcEBP+YnxkGyjq0NWDFyxeISznEUIGISAIMzIUfnuaJDojEhYLRkUEHBsxEhgAJyX/tcCqPx1pAAAJV0lEQVR4nO2d/VvaOBzAKYVrlVQLFGvBF3SoKDiVTadDT7k79fZyuk1v2/n//yHXFvpCk7QpRZK4fH7a82z0+X6W5Js0b83lBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQPBMNBdwNGmHNiXmizjmaYc2JeaKeTS/gOEy7dCmBNYw36Ed2pTAG9ZphzYlPEMdhnZoU2JkqLxagTirOSzSjjArnqEEc6E5/E47wqx4hquwYQXINuYS7RAzEmN4OTTcph1iRmIMpbJqGxontEPMSJzhwClEY4d2iBnxDEsIQ7eaWu9ph5iROEOpZxtqn2iHmJFYwyu7EFWNdogZiTV0c425RzvGbMQbOoVYPaYdYzbiDaWy3RBbtGPMRoLhll2IBb77/ARDqQ3kKt/9RZLhWllVZdpBZiLJ0K6nKt/DmkRDO59qG7SjzEKyoT085boQCQyltsxzSyQxlNrWLu04J4fIUBoY/A7dyAylCr/JhtBQ+qNGO9JJITWUpD9phzoh5IbSX7RjnYwUhtI5l8tRaQylc51Dx1SG0qle7CzQDjkl6QylB10p5juNJu2wU5DSULre1PPFYjG/vtxt8LHWn9bQqamK8wt3rZ+HdeL0htL1wdCRk5XwCQwlaeVmVI4v1lCS3t3qtuRLNpSk1bcHuv6iDW1Kr/7eY3/9NIuhJH0wqqC1f8b0e0c2wwqQVU2zmF7rz2zoUKBtEYcwfDmGEwkKQyb4lQ2vLl+64W+g8uINQS+pGHkwnI8xlGUwiO9F+DeUgfy4xrxhszHXWa/XbY16fb0TnQ5MMJRVIFfwjvQNG8t1dz4l71EsNsf/RZKhrMoaGHxk07D7OuzmKTbH/1GioZn7ZMqg/Zk5w8Y6bDeRoR39U9WSARhssWTYrWMPikxgmFuqFTQVANDuf2TDsJvH+SnKRIa53F7L1OwmCUC5fbdVomzYQJaf4pyg2Lw5uP3n8GRvO5hdITTM5Q6PbEfZtQTlXntQuevfb/0mUzBch/1su/ztm1fXbuBfDMMwjep+WkPbsWVa6ii/Op428uwNG1B+UXTl9u23IPCyG5PmHRRJYWjX1ZpR1WSYGRp2on66fvswHngWQzvnPB0VYMmZGTajGUbPn36NBp7N0Gb7uGUYlkbDcAHyewvHnd3QZulw98g0q5amqrM07I4LKsobhN90DF32nnYXNzTDNA1jNvOl44KKfo7f1zwdwyFL23snh4fPbpeLCuqb79B+UzecGRHBc5wft4aNsKCiv8ILcmrYHBPc/AaHy7vhWA29ifPj1DA8FNVv4wW5NOymEeTRsJlKkEfD16Ekc5AoyKFhqKNQNpMFOTQM9xP/vUTD0L0W+gqBIH+GoSxzipMq9QcX5fLGRrnXvirxZhgUoYLr6fs9d0JFVVV3ekXmzDBUhNdIvyvbSZUhuDEMOnt0Hb0sA4QeT4b1oAxRghWA1OPIMBjO6A9wiM4J1wjOFi3L0lRuDOc9Q2RffwEidoaptfbPzmqLG0bh0/gjWDX0KynqnXe8BNWqsbjjH8peOnwa/Yltw2ZcET6GBVVDPkbvBGXb0M+kOjwxuhUW1PD3IrBt6M/hI+IrhwSNFn4nL9uG/nAGnloL9xNm3BFXpg39ZqhDk6NroY6+8BT3EKYN/TdDOM/cBUVoxgqybeiNuhV4wNYL2mDCpRZMG3qJBn4v/NcvQivpDiSmDb0JGh1fSVUr6TwE04ajEQ1i+qnt19H4Rphj3DCPb4ajTEpwZQfThl4zhMek3jsvwY0dXBhCL/ero95QVZMfwoMhHFxplGiss+SHcGCIeK/wDA2C1WceDOFUWhq1Q4PgIctYw4HMiiFiRXvYDrUjgod0sG8nbfpliH2xGA3aNJJjgXW8If0yrOO6w+HFozLRxUDYdOWNbWkarg87C8TGoL5rSHLh4QLesDzT/U5IhkkCZVhyGyKJ4TLW0HvFpGnYxRpKF6RlmPeAHuG9n5jPL4JlWMNQ7VD6DMjaYbC8iqnpslqdgQmWIi6XDieitP3EJ3gTroiFK++4BZiBSHx8CnJzwr2znpb4ZuEXIeK/aZRKiTrVZ8NNE5h1Q6c3M5Jef/1WCE+4eomG7kXJwyJAb09w0mnSy1OwZ1qHNoptpRi9PyPDZIo0dG7lTBjUBGkGUQ8GI0PKtwi7MzX6d7TiFVBjh96hTdOIHsebMyd5P3lG3B4RuXQ4VIwrgPCucPg0/qU3l0X7wwFFXIfo8hngbxsP70hFrJB7lZRuZ5Eb5grsJgxJ+vkFNx+8HBJErZB7qwIa7U+UuFUNk2pcPiAr2cLY0SjEVFbfq6T0ryuvoyMM+NqFfrMwfjQKtSncXxWgf+W805zQ4zaPFb3TCP2gORc52oaq5P7yKvVmmBuN3OIMpQe9WKx35ruN7tzyej568gu5x8EvQhZu13UKMWHL3oM+uj8OcW5Wv0EcPLkH7FTSnNvrowffAe/yCqQ2EkT+0l8hpzvs9nBWgvWE+3NKtzrKUUEPFq78IqSfSV3mi+j3/DFWNiFH3NGokr/TL37UN0PqSblm6Hig64pnqSh6/hRz8ORCZinPuNj1FLGhBubHw/mme+BZyR+cYpNTUEdVdj7X5QzACQxdvl1/v/4R8/c/g10cVVaKMOcMT5NbIhlrwU4jtcpMEdrUi8iPbqUntJ/RYCOReiQM3UgZBIKsfdSiSXgWIZ7wfkYmhjNhmuTJBkt4MxxLaWZEM2nslqoE2RivRSHqFPGE2qCdR9n8xtNr7AHuZNbGdoUX6M6w4VkmOdqF5Gc5LGiy1VGEWZhQsB/2kw32skzAdn8Cv1J77GSNwfS1wLnti9SCV2MFyLqgrQhib8mD2OqNH42K3RXOBktH2h2x42X0YE2B3SQTYt8Aj0T3At/3IiejNMoLMcQcF1TcLXkBHx/LET+5usFmR49gb8OQgS2JLcnLSg9EjyaqBbqroSnZNTXnarXeoH8ZaZSrW5V2GUSLzx6oAc6+T73t3ZIH5HJvMBhUKpXHwaDdc69Zgw+WWiaH3+I83DDcG7lU/wI5p+CQp2Yts8bSlAU5O8ObABNQq2aNmwwDcbJoIm/JC/QsE7zns/w8lo5bBcNC1k1Vs4xqjZMeMJalnRowDecCucBNs6pmtfWes/QZx/bhce0TMAtDrKPF3SfWppoEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAwBv/A+tn4+sooO0TAAAAAElFTkSuQmCC" alt="Italian Trulli">
+                </center>
+        </div>
+
+        <div id="tab2" class="tab-content">
+            
+            <center> 
+                <h2>KEYS</h2>
+                <p style="font-size: 160%;">自拍-Zìpāi -> SELFIE	|  手机 – Shǒujī ->Phone 
+                <br>现场直播 - Xiànchǎng zhíbò -> Live Streaming
+                <br>个人资料 - Gèrén zīliào -> Personal data
+                <br>网络安全Wǎngluò ānquán -> Cyber Security
+                <br>软件 – Ruǎnjiàn -> Software
+                <br>开渠 - Kāi qú -> Canalize
+                <br>
+                互联网 - 
+                Hùliánwǎng -> Internet
+            </p></center>
+           
+        </div>
+
+        <div id="tab3" class="tab-content">
+            <h2>ALGORITHM</h2>
+            <br>
+            <p style="font-size: 130%; position: relative;">Konum tabanlı(İşine geldiği gibi)<br><br>
+
+                Yönlendirici(kişinin isteğine göre değil daha uzun vakit geçirmesine yönelik)<br><br>
+                
+                Test izleyicisi(Kullanıcının videosunun nasıl yayıldığı – izlet(ex:100 kişi)->süre->çöpe ya da daha büyük kitleye yay)<br><br>
+                </p>
+                <br>
+            <center><iframe width="452" display="block 
+                "height="803" 
+                src="https://www.youtube.com/embed/yZeOCo5siA8" 
+                title="Algorithm" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </center>
+        </div>
+
+        <div id="tab4" class="tab-content">
+            <h2>INVESTMENTS</h2>
+            <pre style="font-size: 160%;">4 M $ - 2018(Softbank, Sequoia Capital, DST Global)  
+2019 – 75 b $
+2020 - 50 b $
++ reklamlar + komisyon(%60 fakat değişebilmekteymiş her yıl)
+            </pre>
+        </div>
+
+        <div id="tab5" class="tab-content">
+            <h2>ACTIVITIES</h2>
+            <p style="font-size: 130%;">130 milyonu aşkın live-streamer
+                <br>Bunu iş olarak yapıyorlar artık
+                <br>İnsanlar kendi ürünlerini satıyorlar tiktok üzerinden
+                <br>İş yerlerine stüdyolar kurup burada tiktok ünlülerine influencerlık yaptırıyorlar
+                <br>Özellikle kadınları seçiyorlarmış??
+                <br>Aylık 120$'dan başlayan maaşları var
+                <br>Aralarından ünlüler çıkabildiği gibi genellikle bu kişilerin ürün pazarlama ömürleri 6 aymış
+                <br>Maalesef modern slave
+            </p>
+            <br>
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bXbatlWx-tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HObNARwPTPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </center>
+        </div>
+    </main>
+</body>
+</html>
